@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="unselectedTabIdentifier" id="gTV-IL-0wX" customClass="UnselectedTabCollectionViewCell" customModule="Ps_Controller_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="66" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="66" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unselectedTabBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Sq2-De-8Cf">
+                        <rect key="frame" x="0.0" y="0.0" width="66" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="5JC-YT-H8T"/>
+                            <constraint firstAttribute="width" constant="66" id="Ufy-WO-DEj"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="controllerTab" translatesAutoresizingMaskIntoConstraints="NO" id="XFs-f4-H1h">
+                        <rect key="frame" x="15" y="17" width="36" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="Qmb-Fd-bMx"/>
+                            <constraint firstAttribute="height" constant="27" id="ROl-hG-3y6"/>
+                            <constraint firstAttribute="width" constant="36" id="ZPe-pu-70d"/>
+                            <constraint firstAttribute="width" secondItem="XFs-f4-H1h" secondAttribute="height" multiplier="4:3" id="p0c-JQ-FS7"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="36" id="rCq-ff-ppD"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Sq2-De-8Cf" secondAttribute="trailing" id="QwG-gN-Sgo"/>
+                <constraint firstItem="Sq2-De-8Cf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SGS-3W-V4c"/>
+                <constraint firstItem="Sq2-De-8Cf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Vs8-sp-QW1"/>
+                <constraint firstAttribute="bottom" secondItem="XFs-f4-H1h" secondAttribute="bottom" constant="16" id="YXq-QA-3n7"/>
+                <constraint firstAttribute="bottom" secondItem="Sq2-De-8Cf" secondAttribute="bottom" id="e9J-v4-dKx"/>
+                <constraint firstItem="XFs-f4-H1h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="17" id="jNY-er-yNC"/>
+                <constraint firstAttribute="trailing" secondItem="XFs-f4-H1h" secondAttribute="trailing" constant="16" id="nCO-KC-M08"/>
+                <constraint firstItem="XFs-f4-H1h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="xlp-2O-SPJ"/>
+            </constraints>
+            <connections>
+                <outlet property="backgroundImage" destination="Sq2-De-8Cf" id="gJu-fX-m1k"/>
+                <outlet property="controllerImage" destination="XFs-f4-H1h" id="E9f-hh-9nq"/>
+            </connections>
+            <point key="canvasLocation" x="65" y="96"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="controllerTab" width="36" height="27"/>
+        <image name="unselectedTabBackground" width="66" height="60"/>
+    </resources>
+</document>
